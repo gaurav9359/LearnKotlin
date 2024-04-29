@@ -97,4 +97,23 @@ fun main(){
         contact.printId()
         // 1
     }
+
+
+    //nullable
+//    use ? after variable to allow null values
+
+    var nullAllowed:String?="gaurav";
+    nullAllowed=null
+    println("checking nullable $nullAllowed")
+
+//    elvisOperator example
+    val nullableString: String? = null
+
+    // Using the Elvis operator to provide a default value
+    val nonNullString = nullableString ?: "Default Value"
+
+    // Printing the result
+    println("Value of nonNullString: $nonNullString")
 }
+
+
